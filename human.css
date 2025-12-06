@@ -1,0 +1,787 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: #0b1520;
+    color: White;
+    font-family: "Merriweather", "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}
+
+nav{
+    background-color: #0D1422;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.big {
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 35px;
+    /* letter-spacing: 2px; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.big:hover {
+    color: white;
+}
+
+.appm {
+    color: white;
+    text-decoration: none;
+}
+
+.kind {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.sign {
+    text-decoration: none;
+    color: darkgray;
+    text-transform: capitalize;
+}
+
+.sign:hover {
+    color: white
+}
+
+.but1,
+.but2 {
+    background-color: darkgray;
+    text-transform: uppercase;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.but1:hover {
+    background-color: white;
+}
+
+.headdd {
+    display: flex;
+    gap: 20px;
+}
+
+.sec1 {
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent, #0D1422), url(https://cdn.sega.co.uk/humankind-game/public/styles/1600/public/content/media/bg/image/KeyArt_Oceania_3840x2160%20%282%29.jpg?itok=yTuvzoyN);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1>div {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.but2 {
+    padding: 14px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.but2:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.page{
+    background-color: #0d1522;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    background-color: #0d1522;
+}
+
+.hero-logo {
+    width: 520px;
+    max-width: 90%;
+    display: block;
+    filter: brightness(1.2);
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    background-color: #0d1522;
+}
+
+
+.feature {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    color: #dbe9f7;
+    font-size: 15px;
+}
+
+
+.media {
+    position: relative;
+    height: 360px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(4, 8, 15, 0.65);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45));
+}
+
+.media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.02);
+}
+
+
+.media::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(8, 12, 20, 0) 40%, rgba(3, 6, 12, 0.7) 100%);
+    pointer-events: none;
+}
+
+.title {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.05;
+    letter-spacing: 0.6px;
+    text-shadow: 0 6px 18px rgba(2, 6, 14, 0.7);
+}
+
+.copy {
+    padding: 16px 6px 0 6px;
+}
+
+.desc {
+    color: #cbdff4;
+    font-size: 13px;
+    line-height: 1.45;
+    opacity: 0.95;
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-family: "Merriweather", "Times New Roman", serif;
+}
+
+.cta {
+    color: #ffffff;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    margin-top: 6px;
+}
+
+
+
+.sec2 {
+    height: 80vh;
+    background: url(https://cdn.sega.co.uk/humankind-game/public/styles/1600/public/content/media/bg/image/promo-bg.jpg?VersionId=HZ1AlmqwqhlqGTEEKndB0ADt.nP_ojQ2&itok=7Pb4cYpA);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222738;
+    gap: 5px;
+
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 2px;
+}
+
+.but3 {
+    padding: 16px;
+    background-color: #292B3A;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.but3:hover {
+    background-color: transparent;
+    color: #292B3A;
+    border: 1px solid #292B3A;
+}
+
+.all-sec3{
+    height: 100vh;
+    background: url(https://cdn.sega.co.uk/humankind-game/public/styles/1600/public/content/media/bg/image/second-promo-landscape.jpg?VersionId=9CTwOKa0LLS8WfssBCPlR9khrmCi8Em3&itok=iN7a66Oj);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+/* @media screen and (max-width:780px) {
+
+    .sec3{
+        height: fit-content;
+        padding: 50px 24px;
+    }
+    .all-sec3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            padding: 0px 24px;   
+        width: fit-content;
+    }
+
+    
+}
+
+@media screen and (max-width:425px) {
+    .all-sec3{
+        height: fit-content;
+        margin: auto;
+    }
+
+    .play2>p{
+    width: fit-content;
+    font-size: 14px;
+    }
+
+    .play2>h1{
+    font-size: 20px;        
+    }
+
+    .play2>h3{
+    font-size: 20px;        
+    }
+} */
+
+.but4 {
+    padding: 16px;
+    background-color: white;
+    color: #292B3A;
+    border: 1px solid white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.but4:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.play2 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 100;
+    gap: 5px;
+    color: white;
+    /* margin: 120px;
+    padding: 120px; */
+}
+
+.imma {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0PX;
+}
+
+.sec4 {
+    height: 55vh;
+    background: url(https://cdn.sega.co.uk/humankind-game/public/styles/1600/public/content/media/bg/image/G2G-Background.jpg?VersionId=zwMCcUzGQJMDjtF4wRZbVeh5LhmtBOdZ&itok=RQ2y4fuN);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-self: center;
+    flex-direction: column;
+    gap: 0;
+    padding: 0px;
+    margin: 0px;
+    row-gap: 0px;
+
+}
+
+
+
+.texttt {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    gap: 0px;
+}
+
+.but5 {
+    padding: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    /* font-weight: 700;
+    font-size: 20px; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    text-transform: uppercase;
+    width: 300px;
+    height: 10px;
+}
+
+.but5:hover {
+    background-color: white;
+    color: #292B3A;
+    border: 1px solid white;
+}
+.just-sec{
+    padding-top: 40px;
+}
+.just-sec>h1{
+    text-align: center;
+    font-size: 38px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+ /* .title{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}  */
+/* .media{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+} */
+
+.tabs{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto 40px auto;
+    gap: 10px;
+}
+
+.tabs>button{
+    background: transparent;
+    border: 1.5px solid #ffffff4f;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.active:hover{
+    background-color: white;
+    color: black;
+}
+
+.active2:hover{
+    background-color: white;
+    color: black;
+}
+
+.image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.parent{
+    width: 90%;
+    max-width: 1400px;
+    display: grid;
+    gap: 35px;
+}
+
+.just-sec{
+    background: #0f111a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.line1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.line1>img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.line2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.line2>img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.foot {
+    background-color: #13223F;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.images1 {
+    display: flex;
+    gap: 50px;
+}
+
+.lmao {
+    text-decoration: none;
+    color: white;
+    font-size: 9px;
+    gap: 8px;
+    font-weight: 900;
+}
+
+.lol {
+    color: white;
+    font-size: 11px;
+    font-weight: 300;
+    margin: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.font {
+    display: flex;
+    gap: 20px;
+
+}
+
+/* .choice{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 4px;
+} */
+.but6 {
+    padding: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    border-radius: 5px;
+    /* font-weight: 700;
+    font-size: 20px; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    text-transform: capitalize;
+    width: 250px;
+    height: 10px;
+}
+
+.ayo {
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+.ayo:hover {
+    text-decoration: underline;
+
+}
+
+@media screen and (min-width:2560px) {
+    .sec3{
+        height: 100vh;
+        padding: 60px 28px;
+    }
+    .play2>p{
+    width: 220px;
+    font-size: 50px;
+    }
+
+    .play2>h1{
+    font-size: 60px;        
+    }
+
+    .play2>h3{
+    font-size: 60px;        
+    }
+
+    .btn4{
+    padding: 30px 78px;
+    border-radius: 16px;
+    }
+
+    .sec4-img>img{
+        width: 750px;
+        height: 300px;
+        position: relative;
+        left: 25%;
+        top: 15px;
+        /* justify-content: center; */
+    }
+    .texttt{
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+    .but5{
+        width: 85%;
+        position: relative;
+        top: 25px;
+        left: 10%;
+    }
+}
+
+@media (max-width: 1160px) {
+   .feature {
+        width: 320px;
+        margin-bottom: 18px;
+    }
+
+    .media {
+        height: 260px;
+    }
+
+    .hero-logo {
+        width: 360px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .line1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .line2{
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec4-img>img{
+        width: 150px;
+        height: 100px;
+        position: relative;
+        left: 25%;
+        top: 15px;
+        /* justify-content: center; */
+    }
+    .texttt{
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+    .but5{
+        width: 85%;
+        position: relative;
+        top: 25px;
+        left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .sec1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img1{
+        width: auto;
+        height: auto;
+    }
+
+
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 14px
+    }
+    .sec2>img{
+      padding: 0px 2px;
+        /* width: 85%; */
+        /* height: 120; */
+    }
+
+    .play>ul{
+        width: fit-content;
+        font-size: 14px;
+    }
+
+    .play>h1{
+        font-size: 10px;
+    }
+
+    .play>h4{
+        font-size: 10px;
+    }
+    .all-sec3{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 3px;
+    }
+    .all-sec3>.imma{
+        object-fit: contain;
+        /* width: 85%; */
+        /* height: 120; */
+    }
+
+    .play2>h1{
+        font-size: 10px;
+    }
+
+    .play2>h4{
+        font-size: 8px;
+    }
+
+    .images1{
+        /* display: flex;
+        flex-direction: column; */
+        gap: 5%;
+    }
+    .but6{
+        width: 85%;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 320px) {
+    .sec1>div{
+        gap: 20px;
+    }
+    .sec2>img{
+        width: 320px;
+    }
+
+    .line1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .line2{
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec4-img>img{
+        width: 150px;
+        height: 100px;
+        position: relative;
+        left: 20%;
+        top: 15px;
+        /* justify-content: center; */
+    }
+    .texttt{
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+    .but5{
+        width: 85%;
+        position: relative;
+        top: 25px;
+        left: 10%;
+    }
+}
