@@ -755,14 +755,12 @@ nav{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
     }
     .sec1>div{
         gap: 10px;
     }
     .img1{
-        position: relative;
-        top: 40%;
+        
     }
     .sec2>img{
         width: 320px;
