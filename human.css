@@ -755,10 +755,10 @@ nav{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: absolute;
     }
     .sec1>div{
         gap: 10px;
-        position: absolute;
     }
     .img1{
         position: relative;
@@ -775,6 +775,9 @@ nav{
     .line2{
         /* display: grid; */
         grid-template-columns: repeat(1, 1fr);
+    }
+    .all-sec3{
+        padding-bottom: 18px;
     }
     .sec4-img>img{
         width: 150px;
