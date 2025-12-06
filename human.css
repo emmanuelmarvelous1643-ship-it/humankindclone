@@ -758,6 +758,11 @@ nav{
     }
     .sec1>div{
         gap: 10px;
+        position: absolute;
+    }
+    .img1{
+        position: relative;
+        top: 40%;
     }
     .sec2>img{
         width: 320px;
